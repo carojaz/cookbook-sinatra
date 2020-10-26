@@ -1,0 +1,12 @@
+<ol>
+  <% @recipes.each do |recipe| %>
+    <li>
+      <%= recipe.name.capitalize %> </br>
+      <%= recipe.description %></br>
+      note : <%= recipe.rating %>/5</br>
+      temps de préparation : <%= recipe.prep_time %></br>
+    </li>
+  <% end %>
+</ol>
+
+<a href = '/new'> /new </a>

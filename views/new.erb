@@ -1,0 +1,29 @@
+<html>
+  <head>
+    <link href = "/application.css" rel="stylesheet">
+  </head>
+  <body>
+    <img src="https://cdn.pixabay.com/photo/2014/12/21/23/28/recipe-575434_1280.png"width="200" height="150" alt="A 200x150 image">
+    <form action="/create" method="post">
+      <div>
+        <label for="name">Recipe name</label>
+        <input type="text" id="name" name="recipe_name">
+      </div>
+      <div>
+      <label for="description">Recipe description</label>
+      <input type="text" id="description" name="recipe_description">
+    </div>
+    <div>
+      <label for="rating">Recipe rate</label>
+      <input type="text" id="rating" name="recipe_rating">
+    </div>
+    <div>
+      <label for="time_prep">Recipe time prep</label>
+      <input type="text" id="prep_time" name="recipe_prep_time">
+    </div>
+    <div class="button">
+      <button type="submit">Créer la recette</button>
+    </div>
+    </form>
+  </body>
+</html>
