@@ -30,4 +30,8 @@ post '/create' do
   redirect "/"
 end
 
+post '/delete' do
+  index = params[:ol]
+  cookbook.remove_recipe(index)
+end
 
